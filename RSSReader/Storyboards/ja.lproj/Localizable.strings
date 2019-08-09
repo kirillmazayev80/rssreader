@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  RSSReader
+
+  Created by Kirill Mazaev on 03.01.2019.
+  Copyright © 2019 mazaev. All rights reserved.
+*/
+
+// 日本語
+"There is no internet connection" = "インターネットに接続できません";
+"Select channel" = "チャンネルを選択";
+"Ok" = "はい";
+"Cancel" = "キャンセル";
+"Details" = "詳細";
+"Browse" = "ブラウズ";
+"WARNING" = "警告";
+"REQUEST ERROR" = "リクエストエラー";
+"Something went wrong. Please try again later" = "何かがおかしかった。 後でもう一度やり直してください";

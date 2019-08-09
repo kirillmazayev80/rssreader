@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  RSSReader
+
+  Created by Kirill Mazaev on 03.01.2019.
+  Copyright © 2019 mazaev. All rights reserved.
+*/
+
+// deutsche Sprache
+"There is no internet connection" = "Es gibt keine Internetverbindung";
+"Select channel" = "Kanal auswählen";
+"Ok" = "ok";
+"Cancel" = "stornieren";
+"Details" = "Einzelheiten";
+"Browse" = "Durchsuche";
+"WARNING" = "WARNUNG";
+"REQUEST ERROR" = "Anforderungsfehler";
+"Something went wrong. Please try again later" = "Etwas ist schief gelaufen. Bitte versuchen Sie es später noch einmal";

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qL7-qj-6KC">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Browser Controller-->
+        <scene sceneID="K5Q-RD-Jsl">
+            <objects>
+                <viewController storyboardIdentifier="BrowserControllerID" id="qL7-qj-6KC" customClass="BrowserController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xkr-Fz-xU5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L25-rO-lLk">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qL7-qj-6KC" id="RjV-ve-PnO"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ngj-52-KEw">
+                                <rect key="frame" x="150" y="284" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L25-rO-lLk" firstAttribute="leading" secondItem="WCP-L5-LbD" secondAttribute="leading" id="1AO-JE-riS"/>
+                            <constraint firstItem="L25-rO-lLk" firstAttribute="trailing" secondItem="WCP-L5-LbD" secondAttribute="trailing" id="DEI-fU-9Pr"/>
+                            <constraint firstItem="Ngj-52-KEw" firstAttribute="centerY" secondItem="L25-rO-lLk" secondAttribute="centerY" id="YhI-vE-ZPW"/>
+                            <constraint firstItem="L25-rO-lLk" firstAttribute="top" secondItem="WCP-L5-LbD" secondAttribute="top" id="kXF-aB-vB2"/>
+                            <constraint firstItem="L25-rO-lLk" firstAttribute="bottom" secondItem="WCP-L5-LbD" secondAttribute="bottom" id="oju-w0-x87"/>
+                            <constraint firstItem="Ngj-52-KEw" firstAttribute="centerX" secondItem="L25-rO-lLk" secondAttribute="centerX" id="pak-uV-GTM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WCP-L5-LbD"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityInd" destination="Ngj-52-KEw" id="P12-36-Mq4"/>
+                        <outlet property="webView" destination="L25-rO-lLk" id="MeY-zF-PyN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaO-vP-MSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="87"/>
+        </scene>
+    </scenes>
+</document>
