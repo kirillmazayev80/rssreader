@@ -17,7 +17,7 @@ static const NSString * FEED_COUNT = @"count=20";
 // Washington Post News Channel RSS
 static const NSString * WP_RSS_URL = @"http://feeds.washingtonpost.com/rss/world";
 // Daily Mirror Channel RSS
-static const NSString * DAILY_MIRROR_URL = @"https://www.mirro.co.uk/news/?service=rss";
+static const NSString * DAILY_MIRROR_URL = @"https://www.mirror.co.uk/news/?service=rss";
 
 @implementation Helper
 
